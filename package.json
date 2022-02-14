@@ -1,0 +1,29 @@
+{
+  "name": "mongodb_fullstack_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon src/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dominykas-Zernys/MongoDB_FullStack_Project.git"
+  },
+  "author": "Dominykas Zernys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dominykas-Zernys/MongoDB_FullStack_Project/issues"
+  },
+  "homepage": "https://github.com/Dominykas-Zernys/MongoDB_FullStack_Project#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.2",
+    "mongodb": "^4.3.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.9.0"
+  }
+}
