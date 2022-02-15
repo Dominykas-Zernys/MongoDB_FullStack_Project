@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User management</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="userMng.css">
+    <script src="userMng.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="menu-item"><a href="serviceMng.html">Memberships</a></div>
+        <div class="menu-item"><a>Users</a></div>
+    </header>
+    <main id="main-wrapper">
+        <div id="title-and-button-wrapper">
+            <h1>User Management</h1>
+            <a id="new-membership-user-button" href="createUser.html">
+                <span>+</span>
+                <span>New User</span>
+            </a>
+        </div>
+        <div id="sorting-wrapper">
+            <button id="sorting-button"><div>Sorting By Name: <span id="asc-or-dsc" class="asc">ASC</span></div><img id="sorting-icon" src="img/sorting.svg" alt=""></button>
+        </div>
+        <section id="main-content-wrapper"></section>
+    </main>
+</body>
+</html>
+

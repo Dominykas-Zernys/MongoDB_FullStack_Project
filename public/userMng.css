@@ -1,0 +1,57 @@
+.menu-item:last-child a {
+  color: rgb(99, 154, 216);
+}
+
+#new-membership-user-button {
+  width: 150px;
+}
+
+#sorting-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#sorting-button {
+  border: 0px;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  align-items: center;
+  background-color: transparent;
+}
+
+#sorting-icon {
+  height: 25px;
+  padding: 0;
+}
+
+#main-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.content-wrapper {
+  box-sizing: border-box;
+  width: 31%;
+  margin: 20px 0;
+  padding: 1rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.user-data {
+  padding: 0;
+}
+
+.full-name {
+  color: rgb(121, 127, 139);
+}
+
+li {
+  list-style: none;
+  padding: 10px 0;
+}

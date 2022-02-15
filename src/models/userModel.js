@@ -7,7 +7,7 @@ async function getAllUsers(order) {
       .db('fstackProject')
       .collection('users')
       .find()
-      .sort(order === 'asc' ? { surname: 1 } : { surname: -1 })
+      .sort(order === 'dsc' ? { surname: -1 } : { surname: 1 })
       .toArray();
     dbClient.close();
     return users;

@@ -1,0 +1,71 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.menu-item a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgb(191, 193, 196);
+}
+
+#main-wrapper {
+  background-color: rgb(240, 246, 248);
+  padding: 2rem 9rem 1rem;
+}
+
+#title-and-button-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 27px;
+  font-weight: 300;
+}
+
+#page-description {
+  font-size: small;
+  margin-top: 0;
+}
+
+#new-membership-user-button {
+  height: 40px;
+  width: 180px;
+  background-color: rgb(99, 154, 216);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  background-color: white;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}

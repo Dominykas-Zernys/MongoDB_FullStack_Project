@@ -1,0 +1,38 @@
+.menu-item:first-child a {
+  color: rgb(99, 154, 216);
+}
+
+#main-content-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5%;
+}
+
+.content-wrapper {
+  width: 33%;
+  margin: 20px 0;
+}
+
+.membership-content {
+  text-align: center;
+  padding: 38px 32px 10px;
+  background-color: rgb(228, 225, 222);
+}
+
+.membership-delete-wrapper {
+  display: flex;
+  justify-content: end;
+  background-color: antiquewhite;
+}
+
+.delete-button {
+  height: 45px;
+  width: 45px;
+  background-color: rgb(243, 222, 222);
+  border: none;
+  margin: 1rem;
+}
+
+.delete-button-img {
+  height: 55%;
+}
