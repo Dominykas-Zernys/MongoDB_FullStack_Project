@@ -2,6 +2,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+body {
+  background-color: rgb(240, 246, 248);
+}
+
 button {
   cursor: pointer;
 }
