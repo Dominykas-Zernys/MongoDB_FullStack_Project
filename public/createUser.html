@@ -7,7 +7,7 @@
     <title>Create user</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="createUser.css">
-    <script src="userMng.js" defer></script>
+    <script src="createUser.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,19 +22,20 @@
             <form action="">
                 <div id="first-name-wrapper">
                     <label for="">First Name<span>*</span></label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="first-name">
                 </div>
                 <div id="last-name-wrapper">
                     <label for="">Last Name<span>*</span></label>
-                    <input type="text" name="" id="">
+                    <input type="text" name="" id="last-name">
                 </div>
                 <div id="email-wrapper">
                     <label for="">Email address<span>*</span></label>
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="email">
                 </div>
                 <div id="dropdown-menu-wrapper">
                     <label for="">Change Membership</label>
                     <select name="" id="select-membership">
+                        <option value="" selected id="empty-dropdown-option"></option>
                     </select>
                 </div>
                 <section id="form-button-wrapper">
@@ -42,6 +43,7 @@
                     <button id="submit-button">New User</button>
                 </section>
             </form>
+            <div id="new-user-created"></div>
         </section>
         <footer id="copyright">Copyright ©2021 Membership Manager</footer>
     </main>

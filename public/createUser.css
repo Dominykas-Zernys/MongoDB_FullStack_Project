@@ -4,6 +4,7 @@
 
 form {
   padding: 2rem;
+  padding-bottom: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 100px 100px 100px 30px;
@@ -73,6 +74,18 @@ input {
   border-radius: 5px;
   color: white;
   font-weight: 600;
+}
+
+#new-user-created {
+  height: 18px;
+  text-align: center;
+}
+
+.red-temporary-text {
+  color: red;
+}
+.green-temporary-text {
+  color: green;
 }
 
 footer {
