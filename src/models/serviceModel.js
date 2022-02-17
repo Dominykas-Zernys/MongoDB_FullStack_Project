@@ -8,6 +8,7 @@ async function getAllServices() {
       .db('fstackProject')
       .collection('services')
       .find()
+      .sort({ price: 1 })
       .toArray();
     await dbClient.close();
     return services;

@@ -1,7 +1,7 @@
 const mainContentWrapper = document.querySelector('#main-content-wrapper');
 
 function loadMembershipData() {
-  fetch('http://localhost:3000/memberships')
+  fetch('http://localhost:3000/memberships/')
     .then((res) => res.json())
     .then((services) => {
       mainContentWrapper.innerHTML = '';
@@ -9,7 +9,7 @@ function loadMembershipData() {
         const createServiceWrapper = document.createElement('div');
         createServiceWrapper.classList.add('content-wrapper');
         createServiceWrapper.innerHTML = `<div class="membership-content">
-            <h3>$${service.price.toFixed(2)} ${service.name}</h3>
+            <h3>$${Number(service.price).toFixed(2)} ${service.name}</h3>
             <p>${service.description}</p>
         </div>
         <div class="membership-delete-wrapper">
@@ -32,6 +32,6 @@ mainContentWrapper.addEventListener('click', (event) => {
     fetch('http://localhost:3000/memberships/' + idToDelete, {
       method: 'DELETE',
     });
-    loadMembershipData();
+    location.reload();
   }
 });

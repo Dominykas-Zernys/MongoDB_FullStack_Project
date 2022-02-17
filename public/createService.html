@@ -7,7 +7,7 @@
     <title>Create service</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="createService.css">
-    <script src="userMng.js" defer></script>
+    <script src="createService.js" defer></script>
 </head>
 <body>
     <header>
@@ -22,17 +22,18 @@
             <form action="">
                 <div id="form-grid">
                     <label for="">Name</label>
-                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="text" name="" id="name" placeholder="Name">
                     <label for="">Membership Price</label>
-                    <input type="number" name="" id="" step="0.01" placeholder="Membership Price">
+                    <input type="number" name="" id="price" step="0.01" placeholder="Membership Price">
                     <label for="">Description</label>
-                    <textarea type="text" name="" id="" rows="7"></textarea>
+                    <textarea type="text" name="" id="description" rows="7"></textarea>
                 </div>
                 <div id="form-button-wrapper">
                     <button id="cancel-button">Cancel</button>
                     <button id="submit-button">New Membership</button>
                 </div>
             </form>
+            <div id="new-user-created"></div>
         </section>
         <footer id="copyright">Copyright ©2021 Membership Manager</footer>
     </main>

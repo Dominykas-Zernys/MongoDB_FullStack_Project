@@ -76,18 +76,6 @@ input {
   font-weight: 600;
 }
 
-#new-user-created {
-  height: 18px;
-  text-align: center;
-}
-
-.red-temporary-text {
-  color: red;
-}
-.green-temporary-text {
-  color: green;
-}
-
 footer {
   margin-top: 2rem;
 }

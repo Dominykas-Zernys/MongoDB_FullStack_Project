@@ -66,6 +66,19 @@ h1 {
 
 .content-wrapper {
   background-color: white;
+  box-shadow: 0 0 5px 2px rgb(187, 212, 210);
+}
+
+#new-user-created {
+  height: 18px;
+  text-align: center;
+}
+
+.red-temporary-text {
+  color: red;
+}
+.green-temporary-text {
+  color: green;
 }
 
 #copyright {
