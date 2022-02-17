@@ -1,22 +1,24 @@
 const dropdownMenu = document.getElementById('select-membership');
-const submitButton = document.getElementById('submit-button');
+const Form = document.querySelector('form');
 const firstName = document.getElementById('first-name');
 const lastName = document.getElementById('last-name');
 const email = document.getElementById('email');
 const createInfoText = document.getElementById('new-user-created');
 
-fetch('http://localhost:3000/memberships/')
-  .then((res) => res.json())
-  .then((memberships) => {
-    memberships.data.map((membership) => {
-      const createOption = document.createElement('option');
-      createOption.textContent = membership.name;
-      createOption.value = membership._id;
-      dropdownMenu.append(createOption);
-    });
+async function createDropdown() {
+  const res = await fetch('http://localhost:3000/memberships/');
+  const memberships = await res.json();
+  memberships.data.forEach(({ _id, name }) => {
+    const createOption = document.createElement('option');
+    createOption.textContent = name;
+    createOption.value = _id;
+    dropdownMenu.append(createOption);
   });
+}
 
-submitButton.addEventListener('click', (event) => {
+createDropdown();
+
+Form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (
     !firstName.value ||

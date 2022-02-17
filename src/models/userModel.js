@@ -6,11 +6,31 @@ async function getAllUsers(order) {
     const users = await dbClient
       .db('fstackProject')
       .collection('users')
-      .find()
+      .aggregate([
+        {
+          $match: {},
+        },
+        {
+          $lookup: {
+            from: 'services',
+            localField: 'service_id',
+            foreignField: '_id',
+            as: 'membership',
+          },
+        },
+      ])
       .sort(order === 'dsc' ? { surname: -1 } : { surname: 1 })
       .toArray();
     dbClient.close();
-    return users;
+    const usersWithServices = [];
+    users.map(
+      (user) =>
+        (user = usersWithServices.push({
+          ...user,
+          membership: user.membership[0].name,
+        }))
+    );
+    return usersWithServices;
   } catch (err) {
     console.warn('getAllUsers error', err);
     return false;

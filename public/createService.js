@@ -1,10 +1,10 @@
 const membershipName = document.getElementById('name');
 const price = document.getElementById('price');
 const membershipDescription = document.getElementById('description');
-const submitButton = document.getElementById('submit-button');
+const Form = document.querySelector('form');
 const createInfoText = document.getElementById('new-user-created');
 
-submitButton.addEventListener('click', (event) => {
+Form.addEventListener('submit', (event) => {
   event.preventDefault();
   if (!membershipName.value || !price.value || !description.value) {
     createInfoText.textContent = 'Some fields are left empty!';
